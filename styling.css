@@ -1,0 +1,22 @@
+body{
+    background-color: purple;
+}
+
+.navbar{
+    height: 60px;
+    display: block ;
+    position: fixed;
+    right: 30px;
+}
+
+a{
+    color: white;
+    text-decoration: none ;
+    margin-right :40px ;
+}
+
+#logo{
+    position: fixed;
+    left: 30px;
+    background-position: 0%;
+}
