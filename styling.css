@@ -1,11 +1,20 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
     background-color: purple;
 }
 
 .navbar{
-    height: 60px;
-    display: block ;
-    position: fixed;
+    height:60px;
+    width: 100% ;
+    display: flex ;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
     right: 30px;
 }
 
@@ -13,10 +22,299 @@ a{
     color: white;
     text-decoration: none ;
     margin-right :40px ;
+    font-size: large;
 }
 
 #logo{
-    position: fixed;
-    left: 30px;
-    background-position: 0%;
+    height: 9.5vh;
+    position: absolute;
+    left: 5% ;
+}
+
+.component1{
+    height: 800px ;
+    width: 100% ;
+    position: absolute;
+    top: 9.5vh;
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+}
+
+#component1_text{
+    height: 100% ;
+    width: 50%;
+    display: flex ;
+    flex-direction: column;
+    color: white;
+}
+
+#component1_text1{
+    height : 60% ;
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 3.3rem ;
+    margin-bottom: 6%;
+}
+
+#component1_text2{
+    height : 40% ;
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.1rem ;
+    margin-top: 0;
+}
+
+#component1_image{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    right: 0 ;
+    bottom: 0; 
+}
+
+#banner_image{
+    height: 80%;
+    position: absolute ;
+    bottom: 0 ;
+    right: 0 ;
+}
+
+.features_web{
+    height: 800px ;
+    width: 100% ;
+    position: absolute ;
+    top: 860px ;
+    display: flex ;
+    flex-direction: column;
+    background-color: aqua ;
+
+} 
+
+.heading{
+    height: 20% ;
+    width: 100% ;
+    display : flex ;
+    justify-content: center ;
+    align-items: center ;
+    font-size: large;
+}
+
+.info_web{
+    height: 80%;
+    width: 100% ;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly;
+}
+
+.left-info{
+    height: 80% ;
+    width :25% ;
+    margin-left: 10%;
+}
+
+.middle_image{
+    height: 80% ;
+    width : 25% ;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_info{
+    height: 80% ;
+    width : 25% ;
+    margin-right: 10%;
+}
+
+.info-leftside{
+    height: 25% ;
+    width: 100% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: end ;
+    align-items: center;
+}
+
+.info-rightside{
+    height: 25% ;
+    width: 100% ;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end ;
+    align-items: center;
+}
+
+.info-leftside p{
+    text-align: end;
+}
+
+.info-rightside p{
+    text-align : start ;
+}
+
+#info-1 ,#info-2, #info-3 , #info-4{
+    height : 100% ;
+    width: 75% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+#logo-1,#logo-2,#logo-3,#logo-4{
+    height: 100% ;
+    width: 25% ;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-left{
+    height: 50%;
+}
+
+#logo-5,#logo-6,#logo-7,#logo-8{
+    height: 100% ;
+    width: 25% ;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-logo{
+    height: 50% ;
+}
+
+#info-5 ,#info-6, #info-7 , #info-8{
+    height : 100% ;
+    width: 75% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.review{
+    height: 600px ;
+    width: 100% ;
+    display: flex;
+    flex-direction: column ;
+    position: absolute;
+    top: 1660px ;
+    background-color: white;
+}
+
+.rev-head{
+    height: 20% ;
+    width: 100% ;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.prof-info{
+    height: 80% ;
+    width: 100% ;
+    display: flex ;
+    justify-content: space-evenly;
+    margin-right: 40px;
+
+}
+
+.checked{
+    color: orange;
+}
+
+.box{
+    height: 100% ;
+    width: 30% ;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.rev-photo{
+    height: 120px ;
+    width: 120px ;
+}
+
+.foot-info{
+    height: 200px ;
+    width: 100% ;
+    position: absolute;
+    top : 2260px ; 
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+}
+
+.foot-head{
+    height: 70% ;
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white ; 
+    font-size: x-large;
+}
+
+.contact-info{
+    height: 30% ;
+    width: 100% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#email{
+    height: 100% ;
+    width:30% ;
+    display: flex ;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#tel{
+    height: 100% ;
+    width: 30% ;
+    display: flex ;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.foot-text{
+    font-size: large;
+    color: white;
+}
+
+.foot-space{
+    height: 100% ;
+    width:30% ;
+}
+
+@media screen and (max-width: 400px) {
+    .navbar{
+        height: 7.66%;
+        width: 100vw ;
+        justify-content: space-evenly;
+    }
+
+    a{
+        font-size: 2vw ;
+    }
+
+    #logo{
+        height: 9.5vh;
+        top: 0 ;
+        left: 50vw ;
+
+    }
 }
